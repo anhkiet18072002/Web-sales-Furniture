@@ -1,0 +1,99 @@
+.tuyendung_header {
+  padding-top: 10%;
+}
+.tuyendung_header h1 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 600;
+}
+.tuyendung_header hr {
+  position: relative;
+  top: 4.5vw;
+  left: -2vw;
+  width: 20%;
+  color: yellow;
+}
+.tuyendung_header .content {
+  width: 100%;
+  padding: 5%;
+  padding-right: 0;
+  display: flex;
+}
+.tuyendung_header .content_1 {
+  width: 25%;
+  padding-right: 20px;
+  margin-right: 5%;
+}
+.tuyendung_header .content_1 h4 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.tuyendung_header .content_1 p {
+  padding-top: 10px;
+  font-size: 17px;
+}
+.tuyendung_header .content_1 .grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2%;
+  row-gap: 8px;
+}
+.tuyendung_header .content_1 .grid-container img {
+  width: 90%;
+  height: auto;
+}
+.tuyendung_header .content_2 {
+  width: 75%;
+}
+.tuyendung_header .content_2 .content_2_01 {
+  display: flex;
+  padding-top: 10%;
+}
+.tuyendung_header .content_2 .content2_01_text {
+  padding-left: 15px;
+}
+.tuyendung_header .content_2 .content2_01_text p {
+  font-size: 16px;
+  text-align: justify;
+  padding-top: 10px;
+}
+.tuyendung_header .content_2 .content2_01_text button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  width: 10vw;
+  height: 3vw;
+}
+ .content2_01_text button:hover {
+  background-color: rgb(180, 156, 119);
+}
+ .next_page {
+  padding-top: 10%;
+}
+ .next_page ul {
+  display: flex;
+  list-style: none;
+
+  padding-left: 10px;
+}
+ .next_page ul li {
+  padding-right: 1%;
+}
+ .next_page ul span {
+  border: 1px solid black;
+  padding: 8px;
+  color: black;
+}
+ .next_page a {
+  border: 1px solid var(--detail-color);
+  padding: 8px;
+  color: var(--detail-color);
+  text-decoration: none;
+}
+ .next_page a:hover {
+  border: 1px solid black;
+  color: black;
+}

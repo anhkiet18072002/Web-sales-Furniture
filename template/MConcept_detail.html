@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--MConcept-->
+    <link rel="stylesheet" href="../assets/css/mconcept_detail.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!--M-Concept detail Content-->
+      <div class="MC_detail-header container">
+        <div class="header_1 flex">
+          <div class="img-container">
+            <img src="../assets/images/MConcept/detail/img_1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h1>EZ Concept</h1>
+            <p>Gallery</p>
+            <div class="img-grid">
+              <img
+                src="../assets/images/MConcept/detail/img_2.jpeg"
+                alt=""
+              /><img
+                src="../assets/images/MConcept/detail/img_3.jpeg"
+                alt=""
+              /><img
+                src="../assets/images/MConcept/detail/img_4.jpeg"
+                alt=""
+              /><img src="../assets/images/MConcept/detail/img_5.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="header_2 flex">
+          <div class="content">
+            <h1>EZ CONCEPT – SÁNG TẠO ĐỘC ĐÁO VÀ BÍ ẨN LƯU TRỮ</h1>
+
+            <p>
+              Được thiết kế để mang lại những giải pháp lưu trữ tối ưu nhất cho
+              không gian nhà ở giới hạn hiện nay, <b>EZ Concept</b> có thể giúp
+              bạn giải quyết và sắp xếp đồ vật theo phong cách riêng.
+            </p>
+            <p>
+              Với sự góp mặt của những thiết kế đơn giản nhưng biến hoá mới lạ
+              hơn với những chi tiết tối ưu hoá công năng. Sự ấm áp và gần gũi
+              của chất liệu gỗ, kết hợp với hệ thống ngăn kệ tủ linh hoạt, từng
+              sản phẩm của <b>EZ Concept</b> sẽ mang lại cảm giác mới mẻ và độc
+              đáo.
+            </p>
+            <p>
+              <b>EZ Concept</b> sẽ giúp bạn cảm thấy cuộc sống "easy" - dễ dàng
+              hơn.
+            </p>
+            <a href="#"><b>Xem công trình thực tế tại đây!</b></a>
+          </div>
+          <div class="image-container">
+            <img src="../assets/images/MConcept/detail/img_6.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="MC_detail-package container">
+        <h1>Lựa chọn các gói</h1>
+
+        <div class="filter">
+          <div class="package" id="basic" onclick="selectPackage('basic')">
+            <h5>Basic</h5>
+          </div>
+          <div
+            class="package"
+            id="standard"
+            onclick="selectPackage('standard')"
+          >
+            <h5>Standard</h5>
+          </div>
+          <div class="package" id="premium" onclick="selectPackage('premium')">
+            <h5>Premium</h5>
+          </div>
+          <div class="package" id="deluxe" onclick="selectPackage('deluxe')">
+            <h5>Deluxe</h5>
+          </div>
+        </div>
+        <div class="package_info">
+          <div class="package_info-head flex">
+            <div class="image-container">
+              <img id="package-image" src="" alt="" />
+            </div>
+            <div class="content">
+              <h1 id="package-heading"></h1>
+              <p id="package-subheading"></p>
+              <p>Giá chỉ từ:</p>
+              <h2 id="package-price"></h2>
+              <p>Gồm hơn 11 sản phẩm trọn gói nội thất cơ bản</p>
+              <p for="beds">Số lượng phòng ngủ</p>
+              <div>
+                <select id="beds" onchange="updatePrice()">
+                  <option value="1">1 Phòng ngủ</option>
+                  <option value="2">2 Phòng ngủ</option>
+                  <option value="3">3 Phòng ngủ</option>
+                </select>
+              </div>
+              <p for="kitchen">Lựa chọn bếp</p>
+              <div>
+                <select id="kitchen" onchange="updatePrice()">
+                  <option value="0">Không bếp</option>
+                  <option value="1">Có bếp</option>
+                </select>
+              </div>
+              <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+          <div class="package_info-body">
+            <div class="image-container">
+              <img id="package-bill" src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Share Content-->
+      <div class="container share"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/MC_detail.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

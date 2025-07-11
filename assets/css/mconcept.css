@@ -1,0 +1,86 @@
+.concept-header {
+  margin-top: 11%;
+  display: flex;
+  width: 80vw;
+  position: relative;
+  left: 10%;
+}
+.concept-header .content {
+  width: 50%;
+  padding: 3%;
+}
+.concept-header .content h1 {
+  margin: 3% 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+.concept-header .content p {
+  color: var(--title-color);
+}
+.concept-header .content p,
+.concept-header .content b {
+  font-size: 15px;
+}
+.concept-header .video-container {
+  width: 50%;
+}
+.video-container {
+  position: relative;
+  width: 40vw; /* Chiều rộng của video */
+  height: 35vh; /* Chiều cao của video */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.concept-body {
+  width: 100vw;
+}
+.concept-body img {
+  width: 100vw;
+}
+.concept-items {
+  position: relative;
+  left: 15%;
+  width: 70vw;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-decoration: none;
+}
+
+.concept-items .item .image-container {
+  width: 35vw;
+  overflow: hidden;
+}
+.concept-items .item .image-container img {
+  width: 35vw;
+  transition: transform 0.3s ease;
+}
+.concept-items .item .image-container:hover img {
+  transform: scale(1.2);
+}
+.concept-items .item h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+.concept-items .item p:hover,
+.concept-items .item h2:hover {
+  opacity: 0.8;
+}
+.concept-items .item p {
+  color: var(--detail-color);
+  font-size: 15px;
+  margin: 0;
+}
+.concept-items .item p > b {
+  color: black;
+}
+
+.content-item {
+  text-decoration: none;
+}

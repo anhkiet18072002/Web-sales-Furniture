@@ -1,0 +1,25 @@
+/*SlideShow*/
+.slideshow {
+  margin-top: 8%;
+}
+
+/*SlideBar*/
+.slidebar {
+  display: flex;
+}
+
+.slider {
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.slidebar > h3 {
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  color: #2b2b2b;
+  line-height: 100%;
+}

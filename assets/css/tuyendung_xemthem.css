@@ -1,0 +1,68 @@
+.content_2 h1 {
+  font-size: 40px;
+}
+.content_2 img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.content_2 span {
+  font-weight: 600;
+}
+.content_2 hr {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content_2 p {
+  font-size: 15px;
+  text-align: justify;
+}
+.content_2 ul li {
+  font-size: 15px;
+}
+.content_2 .comment .header {
+  display: flex;
+  justify-content: space-between;
+}
+.content_2 .comment .header h4 {
+  font-weight: 600;
+}
+.content_2 .comment .header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.content_2 .comment .header ul li {
+  padding-left: 20px;
+}
+.content_2 .comment .header ul li a {
+  color: black;
+  font-size: 10px;
+}
+.content_2 .comment table {
+  width: 100%;
+  margin-bottom: 1%;
+}
+.content_2 .comment td {
+  padding-top: 2%;
+}
+.content_2 .comment input {
+  width: 25.5vw;
+  height: 8vh;
+  padding: 10px;
+  font-size: 16px;
+}
+.content_2 .comment textarea {
+  width: 53vw;
+  padding: 10px;
+}
+.content_2 .comment button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 20px;
+}
+.content_2 .comment button:hover {
+  background-color: black;
+  color: white;
+}

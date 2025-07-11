@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Thietkethicong -->
+    <link rel="stylesheet" href="../assets/css/thietkethicong.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!--thietkethicong Content-->
+      <div class="thietke_header">
+        <div class="header">
+          <h1>THIẾT KẾ & THI CÔNG</h1>
+          <p>
+            Hẹn gặp ngay đội ngũ chuyên nghiệp và giàu kinh nghiệm từ Make My
+            Home để được tư vấn những giải pháp hoàn thiện nội thất cho ngôi nhà
+            của bạn.
+          </p>
+          <button class="lienhe">LIÊN HỆ NGAY: 18007200</button>
+        </div>
+        <div class="content">
+          <div class="navbar">
+            <h2>03 lý do nên chọn Make My Home</h2>
+            <p>
+              Với kinh nghiệm hơn 23 năm trong thiết kế và hoàn thiện nội thất
+              cùng đội ngũ thiết kế chuyên nghiệp, Make My Home mang đến giải
+              pháp toàn diện trong nội thất.
+            </p>
+            <div class="navbar_box">
+              <div class="navbar_box_container">
+                <a href="#" class="navbar_box_click" id="link1">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <span>Thức tế giống với 3D</span>
+                </a>
+                <div class="hiden_text" id="hiden_text1">
+                  <div class="hiden_text_bg1">
+                    <div class="hiden_text_content">
+                      <h3>Trải nghiệm thực tế</h3>
+                      <p>
+                        Bạn thường gặp tình trạng bản phác thảo 3D khác xa với
+                        công trình thực tế? Đừng lo, tại Make My Home, bạn hoàn
+                        toàn yên tâm bởi chất lượng luôn được bảo đảm từ đội ngũ
+                        tay nghề cao với thương hiệu hơn 23 năm tuổi. Đặc biệt,
+                        trên hệ thống 10 cửa hàng, bạn có thể dễ dàng tham khảo
+                        không gian và sản phẩm thực tế trước khi đặt hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navbar_box_container">
+                <a href="#" class="navbar_box_click" id="link2">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <span>Luôn cá nhân hóa</span>
+                </a>
+                <div class="hiden_text" id="hiden_text2">
+                  <div class="hiden_text_bg2">
+                    <div class="hiden_text_content">
+                      <h3>Đa dạng thiết kế</h3>
+                      <p>
+                        Bạn thường bắt gặp nhiều mẫu thiết kế giống nhau khi vô
+                        tình đến một địa điểm nào đó? Bạn muốn có một mẫu thiết
+                        kế đặc biệt dành riêng cho căn hộ của mình? Hãy nói cho
+                        Make My Home biết nhu cầu và sở thích của bạn, đội ngũ
+                        thiết kế sẽ giúp bạn thể hiện gu thẩm mỹ đỉnh cao cùng
+                        cá tính độc đáo của bạn theo phong cách riêng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navbar_box_container">
+                <a href="#" class="navbar_box_click" id="link3">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <span>Dịch vụ cao cấp</span>
+                </a>
+
+                <div class="hiden_text" id="hiden_text3">
+                  <div class="hiden_text_bg3">
+                    <div class="hiden_text_content">
+                      <h3>Dịch vụ uy tín</h3>
+                      <p>
+                        Với quy trình làm việc chuyên nghiệp, đội ngũ Make My
+                        Home sẽ tư vấn online và đến tận nơi để trao đổi ngay
+                        khi bạn liên hệ. Sau khi công trình hoàn thiện, Make My
+                        Home luôn sẵn sàng bảo hành và sửa chữa nếu có vấn đề
+                        phát sinh.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide_show -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="../assets/images/thietkethicong/slide_show1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img
+                  src="../assets/images/thietkethicong/slide_show2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Dăng ký -->
+          <div class="sign">
+            <div class="sign-image"></div>
+            <div class="sign-form">
+              <div class="sign-form_text">
+                <h3>ĐĂNG KÝ TƯ VẤN TẠI NHÀ</h3>
+                <p>
+                  Hẹn gặp ngay tư vấn thiết kế nội thất tại nhà bằng cách để lại
+                  thông tin tại form dưới đây
+                </p>
+                <p><span>Tên của bạn (Yêu cầu)</span></p>
+                <input type="text" name="your-name" id="" />
+                <p><span>Điện thoại (Yêu cầu)</span></p>
+                <input type="text" name="" id="" />
+                <p><span>Email của bạn</span></p>
+                <input type="email" name="" id="" />
+                <p><span>Địa chỉ</span></p>
+                <input type="text" name="" id="" />
+                <p><span>Yêu cầu của bạn (Yêu cầu)</span></p>
+                <textarea name="" id="" cols="50" rows="6"></textarea>
+                <div class="sign-button">
+                  <label class="label">
+                    <input type="file" required />
+                  </label>
+                  <button class="other_button lienhe">GỬI YÊU CẦU</button>
+                  <button class="lienhe">LIÊN HỆ: 18007200</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="thietke_header-container">
+            <!-- Quy trình thiết kế -->
+            <div class="quytrinhthietke">
+              <h2>Quy trình thiết kế hoàn thiện nội thất</h2>
+              <div class="quytrinhthietke-container">
+                <div class="content0">
+                  <div class="content-text">
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link4">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 1: Tiếp nhận thông tin khảo sát</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text4">
+                        <p>
+                          Tổng hợp các yêu cầu của khách hàng về dạng công trình
+                          (căn hộ, biệt thự, nhà phố); mức độ thiết kế (cung cấp
+                          sản phẩm, cải tạo, thiết kế mới);… Sau đó, tiến hành
+                          khảo sát hiện trạng mặt bằng và đo đạc thực tế.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link5">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 2: Thiết kế ý tưởng</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text5">
+                        <p>
+                          Dựa trên các thông tin từ khách hàng kết hợp với hiện
+                          trạng đã khảo sát, thiết kế Nhà Xinh sẽ lên ý tưởng,
+                          giải pháp, bố trí thỏa mãn tất cả yêu cầu và mục tiêu
+                          đề ra. Sau đó, dựa trên bảng vẽ mặt bằng không gian đã
+                          thống nhất, chúng tôi sẽ dự toán sơ bộ chi phí đầu tư
+                          để khách hàng nắm rõ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content-image"
+                    style="
+                      background-image: url(../assets/images/thietkethicong/h1.jpg);
+                    "
+                  ></div>
+                </div>
+
+                <div class="content1">
+                  <div
+                    class="content-image"
+                    style="
+                      background-image: url(../assets/images/thietkethicong/h2.jpg);
+                    "
+                  ></div>
+                  <div class="content-text">
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link6">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 3: Thiết kế phối cảnh 3D</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text6">
+                        <p>
+                          Dựa trên mặt bằng khách hàng đã duyệt, thiết kế Nhà
+                          Xinh sẽ cho khách quan sát chi tiết không gian nội
+                          thất một cách cụ thể và sống động qua phương pháp vẽ
+                          phối cảnh 3D. Khách hàng sẽ nắm rõ tất cả màu sắc, vật
+                          liệu nội thất trong không gian trước khi đội ngũ Nhà
+                          Xinh tiến hành thi công.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link7">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 4: Ký hợp đồng thi công</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text7">
+                        <p>
+                          Sau khi đã thống nhất một thiết kế 3D, hai bên sẽ tiến
+                          hành ký kết hợp đồng thi công theo bảng dự toán báo
+                          giá mà khách hàng đã duyệt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content0">
+                  <div class="content-text">
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link8">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 5: Triển khai thi công</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text8">
+                        <p>
+                          Đội ngũ giám sát và thiết kế Nhà Xinh sẽ triển khai
+                          thi công tại công trình, đảm bảo đúng theo tiến độ đề
+                          ra.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#" class="navbar_box_click" id="link9">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Bước 6: Nghiêm thu bàn giao</span>
+                      </a>
+                      <div class="hiden_text" id="hiden_text9">
+                        <p>
+                          Tiến hành nghiệm thu và bàn giao công trình sau khi
+                          hoàn tất các hạng mục thi công. Đội ngũ Nhà Xinh sẽ vệ
+                          sinh toàn bộ công trình, hướng dẫn khách sử dụng sản
+                          phẩm, lập biên bản nghiệm thu và tiến hành bàn giao
+                          công trình.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content-image"
+                    style="
+                      background-image: url(../assets/images/thietkethicong/h3.jpg);
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Các dự án thực hiện -->
+            <div class="cacduan">
+              <h2>CÁC DỰ ÁN THỰC HIỆN</h2>
+              <div>
+                <div class="row">
+                  <div class="item">
+                    <a href="../template/thietkethicong2.html">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url(../assets/images/thietkethicong/c1.jpg);
+                        "
+                      ></div>
+                      <h4>Thiết kế căn hộ D’Edge 3PN</h4>
+                      <p>
+                        Những gợi ý thiết kế nội thất Dự án D'Edge 3PN quận 2
+                        Sài Gòn [...]
+                      </p>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="../template/thietkethicong2.html">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url(../assets/images/thietkethicong/c2.jpg);
+                        "
+                      ></div>
+                      <h4>Thiết kế căn hộ The Collection</h4>
+                      <p>
+                        Dự án thiết kế nội thất The Collection dưới đây sẽ giúp
+                        ích cho bạn. [...]
+                      </p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top: 2%">
+                  <div class="item">
+                    <a href="../template/thietkethicong2.html">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url(../assets/images/thietkethicong/c3.jpg);
+                        "
+                      ></div>
+                      <h4>Thiết kế căn hộ The Cove Empire 4PN</h4>
+                      <p>
+                        Những gợi ý thiết kế nội thất Dự án The Cove Empire dưới
+                        đây sẽ giúp [...]
+                      </p>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="../template/thietkethicong2.html">
+                      <div
+                        class="item-image"
+                        style="
+                          background-image: url(../assets/images/thietkethicong/c4.jpg);
+                        "
+                      ></div>
+                      <h4>Thiết kế biệt thự Nine South</h4>
+                      <p>
+                        Những gợi ý thiết kế nội thất Dự án Nine South dưới đây
+                        sẽ giúp ích [...]
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Share Content-->
+      <div class="container share"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/thietkethicong.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

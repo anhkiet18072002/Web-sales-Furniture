@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Ghe_detail-->
+    <link rel="stylesheet" href="../assets/css/thanhtoan.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="left-container">
+        <a href="./LandingPage.html"><h1>Make My Home</h1></a>
+        <p id="direction">
+          <span id="blue">Giỏ hàng</span>&nbsp;&nbsp;<span id="cursor">></span
+          >&nbsp;&nbsp;Thông tin giao hàng
+        </p>
+        <h2>Thông tin giao hàng</h2>
+        <p id="already">
+          Bạn đã có tài khoản?
+          <a href="#" id="sign-in-ref">Đăng nhập</a>
+        </p>
+        <input type="text" id="name" placeholder="Họ và Tên" />
+        <div id="e-p-container">
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="phone" placeholder="Số điện thoại" />
+        </div>
+        <input type="text" id="address" placeholder="Địa chỉ" />
+        <div id="selector-container">
+          <select>
+            <option disabled selected hidden>Thành phố</option>
+            <option>TP.HCM</option>
+            <option>Hà Nội</option>
+            <option>Đà Nẵng</option>
+          </select>
+          <select>
+            <option disabled selected hidden>Quận</option>
+            <option>Gò Vấp</option>
+            <option>Phú Nhuận</option>
+            <option>Quận 1</option>
+            <option>Quận 2</option>
+          </select>
+          <select>
+            <option disabled selected hidden>Phường</option>
+            <option>Phường 1</option>
+            <option>Phường 2</option>
+            <option>Phường 3</option>
+            <option>Phường 4</option>
+            <option>Phường 5</option>
+            <option>Phường 6</option>
+          </select>
+        </div>
+        <h2>Phương thức giao hàng</h2>
+        <!-- Nhận hàng -->
+        <div class="radio-border">
+          <input type="radio" id="toanquoc" name="shipping-method" checked />
+          <label for="toanquoc"
+            >TOÀN QUỐC - ViettelPost giao hàng tận nơi (có phí)</label
+          >
+        </div>
+        <div class="radio-border">
+          <input type="radio" id="hcm" name="shipping-method" />
+          <label for="hcm">HCM - MakeMyHome giao hàng tận nơi (Có phí)</label>
+        </div>
+        <div class="radio-border">
+          <input type="radio" id="atstore" name="shipping-method" />
+          <label for="atstore">Tôi sẽ đến nhận tại cửa hàng</label>
+        </div>
+        <h2>Phương thức thanh toán</h2>
+        <!-- Thanh toán -->
+        <div class="radio-border2">
+          <input type="radio" id="cod" name="payment-method" checked />
+          <label for="cod"
+            ><img src="../assets/images/thanhtoan/cod.svg" />Thanh toán khi giao
+            hàng (COD) - Chỉ áp dụng khu vực nội thành HCM</label
+          >
+        </div>
+        <!-- Xử lý javascript -->
+        <p id="cod-description">
+          Chỉ áp dụng khu vực Nội thành HCM (cách kho hàng <20km) do Make My
+          Home trực tiếp giao hàng và lắp đặt. Make My Home sẽ quyết định cuối
+          cùng về hình thức giao hàng và COD cho khách hàng.
+        </p>
+        <!-- ---- -->
+        <div class="radio-border2">
+          <input type="radio" id="online" name="payment-method" />
+          <label for="online"
+            ><img src="../assets/images/thanhtoan/nganluong.svg" />Thanh toán
+            online</label
+          >
+        </div>
+        <!-- Chuyển trang -->
+        <div id="flex-navigator">
+          <a href="#" id="cart-ref">Giỏ hàng</a>
+          <a id="button-ref" onclick="payment()">Thanh toán</a>
+        </div>
+      </div>
+      <!-- Bên phải -->
+      <div class="right-container">
+        <ul id="cart-items"></ul>
+        <hr />
+        <div id="discount-container">
+          <input
+            type="text"
+            id="discount-code"
+            placeholder="Nhập mã giảm giá"
+          />
+          <button id="apply" onclick="discount()">Nhập</button>
+        </div>
+        <hr />
+        <div id="price-detail-container-1">
+          <p id="left-detail1">Tạm tính</p>
+          <p id="cart-total"><span class="underline">đ</span></p>
+        </div>
+        <div id="price-detail-container-2">
+          <p id="left-detail2">Phí vận chuyển</p>
+          <p id="right-detail2">150000</p>
+        </div>
+        <hr />
+        <div id="final-price-container">
+          <p id="left-detail3">Tổng</p>
+          <p id="right-detail3">
+            <span id="final-price"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/thanhtoan.js"></script>
+</html>

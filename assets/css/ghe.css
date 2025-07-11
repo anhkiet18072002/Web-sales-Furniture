@@ -1,0 +1,27 @@
+.ghe_header {
+  padding-top: 10%;
+}
+
+.ghe_header .content {
+  width: 100vw;
+  padding: 5%;
+  padding-top: 2%;
+}
+.ghe_header .flex {
+  margin-top: 5%;
+}
+.ghe_header .flex a {
+  text-decoration: none;
+}
+.ghe_header .flex .product-card {
+  margin-left: 0;
+}
+.ghe_header .flex .product-card .product-image img {
+  width: 18vw;
+}
+.ghe_header .next_page {
+  padding-top: 5%;
+}
+.product-card {
+  padding: 1%;
+}

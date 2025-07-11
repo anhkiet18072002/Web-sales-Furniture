@@ -1,0 +1,72 @@
+.FormDangNhap{
+    position:relative;
+    margin-top:40vh;
+    margin-left:10vw;
+    width:70vw;
+    
+}
+#email {
+    border: 1px solid ;
+    width:50vw;
+    height:9vh;
+    padding-left:1vw;
+    margin-bottom:5vh;
+}
+#password-label{
+    color:var(--navbar-menu-color);
+    font-size:20px;
+}
+#email-label{
+    color:var(--navbar-menu-color);
+    font-size:20px;
+}
+#password{
+    border: 1px solid ;
+    width:50vw;
+    height:9vh;
+    padding-left:1vw;
+    margin-bottom:5vh;
+}
+#login-form{
+   margin-left:15vw;
+  
+    
+}
+#error-message{
+    font-size:25px;
+    color:var(--navbar-menu-color);
+}
+
+
+.spaced-words{
+    word-spacing: 1vw;
+}
+.DangNhap_Header{
+    
+    text-align:right;
+    margin-right:10vw;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    color:var(--navbar-menu-color);
+}
+#button_dangnhap{
+    display:inline-block;
+
+    height:10vh;
+    width:20vw;
+    color:aliceblue;
+    background-color: black;
+    border: 1px solid ;
+}
+#button_qmk_container{
+    margin-bottom: 10vh;
+}
+
+#button_qmk{
+    color:var(--navbar-menu-color);
+    padding: 0;
+border: none;
+background: none;
+    font-size:20px;
+    text-decoration:none;
+} 

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Uudai-->
+    <link rel="stylesheet" href="../assets/css/uudai.css" />
+    <!--Sản phẩm-->
+    <link rel="stylesheet" href="../assets/css/sanpham.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!-- Ưu đãi -->
+      <div class="Gift-voucher-container">
+        <img src="../assets/images/uudai/uudai_1.jpg" />
+      </div>
+      <div class="Flex_container_uudai">
+        <div class="content_flex_uudai_left">BACK TO SCHOOL SALE OFF 10%</div>
+        <div class="content_flex_uudai_right">
+          <div
+            id="carouselExampleControls3"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_3.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_2.png"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>ANTU</h2>
+                      <p>Ghế ăn, ghế làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">1,650,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_4.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_5.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>ANTU</h2>
+                      <p>Ghế ăn, ghế làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">1,650,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_6.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_7.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                      <div class="soldout">Bán hết</div>
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>ASTU</h2>
+                      <p>Ghế ăn, ghế làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">549,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_8.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_9.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BINAS</h2>
+                      <p>Bàn làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">2,750,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_10.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_11.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BINAS</h2>
+                      <p>Bàn làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">2,750,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_12.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_13.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BINAS</h2>
+                      <p>Bàn làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">2,750,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_14.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_15.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BINAS</h2>
+                      <p>Bàn làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">2,750,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_16.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_18.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BOWLY</h2>
+                      <p>Ghế ăn, ghế làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">1,280,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_19.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_20.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BOWLY</h2>
+                      <p>Ghế ăn, ghế làm việc</p>
+                      <div class="price">
+                        <span class="discount-price">1,280,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_21.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_22.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BUILDER</h2>
+                      <p>Bàn làm việc, bàn trang điểm, 100 x 50 x 75 cm</p>
+                      <div class="price">
+                        <span class="discount-price">2,850,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_23.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_24.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BUILDER</h2>
+                      <p>Bàn làm việc, bàn trang điểm, 100 x 50 x 75 cm</p>
+                      <div class="price">
+                        <span class="discount-price">2,850,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/uudai/uudai_25.webp"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/uudai/uudai_26.webp"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>BUTTERFLY</h2>
+                      <p>Bàn làm việc, 120 x 50 x 75cm</p>
+                      <div class="price">
+                        <span class="discount-price">1,650,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="uudai_title">XEM NGAY</div>
+      <div id="XemNgay" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="0">
+            <div class="Flex_container_carousel_uudai">
+              <a href="./ghe_detail.html" class="product-card">
+                <span class="discount-tag">20</span>
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_27.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_28.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>AROU</h2>
+                  <p>Gương, 50cm</p>
+                  <div class="price">
+                    <span class="discount-price">760,000</span>
+                    <span class="original-price">1,050,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <span class="discount-tag">20</span>
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_29.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_30.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>LEA</h2>
+                  <p>Gương viền da, 50cm</p>
+                  <div class="price">
+                    <span class="discount-price">1,160,000</span>
+                    <span class="original-price">1,650,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <span class="discount-tag">40</span>
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_31.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_32.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                  <div class="soldout">Bán hết</div>
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>AROU</h2>
+                  <p>Gương đèn LED</p>
+                  <div class="price">
+                    <span class="discount-price">732,000</span>
+                    <span class="original-price">1,220,000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="0">
+            <div class="Flex_container_carousel_uudai">
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_8.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_9.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>BINAS</h2>
+                  <p>Bàn làm việc</p>
+                  <div class="price">
+                    <span class="discount-price">2,750,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_10.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_11.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>BINAS</h2>
+                  <p>Bàn làm việc</p>
+                  <div class="price">
+                    <span class="discount-price">2,750,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/uudai/uudai_12.webp"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/uudai/uudai_13.webp"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>BINAS</h2>
+                  <p>Bàn làm việc</p>
+                  <div class="price">
+                    <span class="discount-price">2,750,000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#XemNgay"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#XemNgay"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--Share Content-->
+      <div class="container share"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/tintuc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Sản phẩm-->
+    <link rel="stylesheet" href="../assets/css/sanpham_ghe.css" />
+    <link rel="stylesheet" href="../assets/css/sanpham.css" />
+
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!--Sản phẩm ghế Content-->
+      <div class="sanpham_ghe container">
+        <p><i>Trang chủ /GHẾ - CHAIRS</i></p>
+        <div class="banner">
+          <img src="../assets/images/ghe/banner_1.webp" alt="" />
+        </div>
+        <div class="filter-bar">
+          <button class="filter-button active" data-filter="all">Tất cả</button>
+          <button class="filter-button" data-filter="office-chair">
+            Ghế văn phòng
+          </button>
+          <button class="filter-button" data-filter="dining-chair">
+            Ghế ăn
+          </button>
+          <button class="filter-button" data-filter="bar-stool">
+            Ghế quầy bar
+          </button>
+          <button class="filter-button" data-filter="sofa">Ghế sofa</button>
+          <button class="filter-button" data-filter="stool">Ghế đôn</button>
+          <button class="filter-button" data-filter="bench">
+            Ghế thư giãn
+          </button>
+          <button class="filter-button" data-filter="game">Ghế gaming</button>
+        </div>
+        <div class="product-cards">
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_6.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_6.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>VAHI</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,850,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_7.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_7.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>PANNACOTTA</h2>
+              <p>Ghế đôn</p>
+              <div class="price">
+                <span class="discount-price">800,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_8.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_8.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>POPPY</h2>
+              <p>Ghế ăn, ghế làm việc, ghế bành</p>
+              <div class="price">
+                <span class="discount-price">1,950,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="stool"
+          >
+            <span class="discount-tag">30</span>
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_9.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_9.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>PANNACOTTA</h2>
+              <p>Ghế đôn</p>
+              <div class="price">
+                <span class="discount-price">560,000</span>
+                <span class="original-price">800,000</span>
+              </div>
+            </div>
+          </a>
+          <a href="./ghe_detail.html" class="product-card" data-category="sofa">
+            <span class="discount-tag">10</span>
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_2.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_2.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>AURORA</h2>
+              <p>Sofa giường, 170 x 76 x 68 cm</p>
+              <div class="price">
+                <span class="discount-price">2,961,000</span>
+                <span class="original-price">3,290,000</span>
+              </div>
+            </div>
+          </a>
+          <a href="./ghe_detail.html" class="product-card" data-category="sofa">
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_3.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_3.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>ALADDIN</h2>
+              <p>Sofa góc</p>
+              <div class="price">
+                <span class="discount-price">19,000,000</span>
+              </div>
+            </div>
+          </a>
+          <a href="./ghe_detail.html" class="product-card" data-category="sofa">
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_4.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_4.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>HIRO</h2>
+              <p>Sofa băng 3 seaters</p>
+              <div class="price">
+                <span class="discount-price">13,450,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/new_5.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/detail_5.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>ABU</h2>
+              <p>Ghế đôn</p>
+              <div class="price">
+                <span class="discount-price">1,375,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/sanpham/bestseller/img_1.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/sanpham/bestseller/detail_1.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>VAHI</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,850,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bar-stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/h1.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/h11.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MINOV</h2>
+              <p>Ghế bar</p>
+              <div class="price">
+                <span class="discount-price">3,250,000</span>
+              </div>
+            </div> </a
+          ><a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bar-stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/h2.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/h21.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>PANI</h2>
+              <p>Ghế bar</p>
+              <div class="price">
+                <span class="discount-price">1,850,000</span>
+              </div>
+            </div> </a
+          ><a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bench"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/h3.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/h31.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MINOV</h2>
+              <p>Ghế thư giãn</p>
+              <div class="price">
+                <span class="discount-price">3,850,000</span>
+              </div>
+            </div> </a
+          ><a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bar-stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/h4.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/h41.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>TAGE</h2>
+              <p>Ghế bar, 35 x 30 x 64 cm</p>
+              <div class="price">
+                <span class="discount-price">699,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bar-stool"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/a1.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/h41.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>RET</h2>
+              <p>Ghế bar, 35 x 32 x 67 cm</p>
+              <div class="price">
+                <span class="discount-price">799,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/a2.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/a21.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MEI</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">2,190,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bench"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/a3.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/a31.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>QUADA</h2>
+              <p>Ghế băng, 1m4</p>
+              <div class="price">
+                <span class="discount-price">6,800,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bench"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/a4.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/a41.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>QUADA</h2>
+              <p>GBăng thay giày</p>
+              <div class="price">
+                <span class="discount-price">3,800,000</span>
+              </div>
+            </div> </a
+          ><a
+            href="./ghe2.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/b1.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/b11.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MITA</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,650,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/b2.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/b21.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MITA</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,650,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="bench"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/b3.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/b31.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>HANO</h2>
+              <p>Ghế băng</p>
+              <div class="price">
+                <span class="discount-price">6,500,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="office-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/b4.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/b41.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>LINN</h2>
+              <p>Ghế văn phòng, 61x61x86/96 cm</p>
+              <div class="price">
+                <span class="discount-price">1,750,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="office-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/c1.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/c11.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>LINN</h2>
+              <p>Ghế văn phòng, 61x61x86/96 cm</p>
+              <div class="price">
+                <span class="discount-price">1,750,000</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/c2.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/c21.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+              <div class="soldout">Bán hết</div>
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MITA</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,650,000</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/c3.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/c31.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>KANDI</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">1,550,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="office-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/c4.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/c41.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>SHAPE</h2>
+              <p>Ghế văn phòng, 50 x 52 x 81 cm</p>
+              <div class="price">
+                <span class="discount-price">990,000</span>
+              </div>
+            </div> </a
+          ><a
+            href="./ghe2.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/d1.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/d11.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>LATU</h2>
+              <p>Ghế ăn, ghế làm việc, 51 x 59.5 x 76cm</p>
+              <div class="price">
+                <span class="discount-price">1,375,000</span>
+              </div>
+            </div>
+          </a>
+          <a href="./ghe_detail.html" class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/d2.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/d21.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>NOVEN</h2>
+              <p>Ghế ăn, ghế làm việc, 47 x 53,5 x 77cm</p>
+              <div class="price">
+                <span class="discount-price">1,090,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/d3.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/d31.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>PALAQI</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">499,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/d4.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/d41.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>MINOV</h2>
+              <p>Ghế ăn, ghế làm việc</p>
+              <div class="price">
+                <span class="discount-price">2,850,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="office-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/e1.jpg"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/e11.webp"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>SHAPE</h2>
+              <p>Ghế văn phòng, 50 x 52 x 81 cm</p>
+              <div class="price">
+                <span class="discount-price">990,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/e2.png"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/e21.jpg"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>LATU</h2>
+              <p>Ghế ăn, ghế làm việc, 51 x 59.5 x 76cm</p>
+              <div class="price">
+                <span class="discount-price">1,375,000</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="./ghe_detail.html"
+            class="product-card"
+            data-category="dining-chair"
+          >
+            <div class="product-image">
+              <img
+                src="../assets/images/ghe/e3.webp"
+                alt="Product Image"
+                class="original-image"
+              />
+              <img
+                src="../assets/images/ghe/e31.png"
+                alt="Detail Image"
+                class="hover-image"
+              />
+            </div>
+            <div class="product-details">
+              <i
+                class="fa-solid fa-cart-plus fa-2xl"
+                id="add-cart"
+                onclick="addItem(event)"
+              ></i>
+              <h2>LATU</h2>
+              <p>Ghế ăn, ghế làm việc, 51 x 59.5 x 76cm</p>
+              <div class="price">
+                <span class="discount-price">1,375,000</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button id="load-more-button">Xem thêm</button>
+        <div class="no-results">
+          Không tìm thấy kết quả cho từ khóa "<b
+            ><span id="filter-name"></span></b
+          >"
+        </div>
+      </div>
+
+      <!--Share Content-->
+      <div class="container share"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/sanpham_ghe.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Ghe_detail-->
+    <link rel="stylesheet" href="../assets/css/ghe_detail.css" />
+    <!--Sản phẩm-->
+    <link rel="stylesheet" href="../assets/css/sanpham.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!--Ghế detail Content-->
+      <div class="ghe_detail container">
+        <p><i>Trang chủ / GHẾ - CHAIRS / VAHI</i></p>
+        <div class="product container">
+          <div class="show">
+            <div class="image-slideshow">
+              <img src="../assets/images/sanpham/detail/show_1.webp" alt="" />
+              <img src="../assets/images/sanpham/detail/show_2.jpeg" alt="" />
+              <img src="../assets/images/sanpham/detail/show_3.jpeg" alt="" />
+              <img src="../assets/images/sanpham/detail/show_4.jpeg" alt="" />
+              <img src="../assets/images/sanpham/detail/show_5.jpeg" alt="" />
+              <img src="../assets/images/sanpham/detail/show_6.jpeg" alt="" />
+              <img src="../assets/images/sanpham/detail/show_7.png" alt="" />
+              <img src="../assets/images/sanpham/detail/show_1.webp" alt="" />
+            </div>
+            <div class="img_show">
+              <div
+                id="product_detail"
+                class="carousel slide"
+                data-bs-touch="false"
+                data-bs-interval="false"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="product-img">
+                      <img
+                        src="../assets/images/sanpham/detail/show_1.webp"
+                        alt=""
+                        class="selected"
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_2.jpeg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_3.jpeg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_4.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="product-img">
+                      <img
+                        src="../assets/images/sanpham/detail/show_5.jpeg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_6.jpeg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_7.png"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/sanpham/detail/show_1.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-show"
+                  type="button"
+                  data-bs-target="#product_detail"
+                  data-bs-slide="prev"
+                  style="position: relative; left: -3.5vw; top: -4vw"
+                >
+                  <i
+                    class="fa-solid fa-angle-left fa-2xl"
+                    style="color: #000000"
+                  ></i>
+                </button>
+                <button
+                  class="carousel-control-next btn-show"
+                  type="button"
+                  data-bs-target="#product_detail"
+                  data-bs-slide="next"
+                  style="position: relative; left: 30vw; top: -4vw"
+                >
+                  <i
+                    class="fa-solid fa-angle-right fa-2xl"
+                    style="color: #000000"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="detail-content">
+              <div class="content-header">
+                <h1>LINN</h1>
+                <p>Ghế văn phòng, 61x61x86/96 cm</p>
+                <h3>1,750,000₫</h3>
+              </div>
+              <div class="content-body">
+                <p><b>Kích thước:</b> D61 x R61 x C86/96 cm</p>
+                <p><b>Màu sắc:</b> Nâu/Be/Xanh</p>
+                <p><b>Chất liệu:</b> chân sắt sơn tĩnh điện, nệm ngồi simili</p>
+              </div>
+              <div class="content-footer">
+                <div class="flex">
+                  <b>Màu sắc:</b>
+                  <div
+                    id="brown"
+                    class="color"
+                    onclick="selectColor('brown')"
+                  ></div>
+                  <div
+                    id="beige"
+                    class="color selected"
+                    onclick="selectColor('beige')"
+                  ></div>
+                  <div
+                    id="blue"
+                    class="color"
+                    onclick="selectColor('blue')"
+                  ></div>
+                </div>
+                <div class="flex">
+                  <b>Số lượng:</b>
+                  <input type="number" value="1" />
+                </div>
+              </div>
+            </div>
+            <button class="detail-btn" onclick="addToProductCart()">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Option-->
+      <div class="filter container">
+        <p onclick="showContent('description')" class="filter-item">
+          Mô tả sản phẩm
+        </p>
+
+        <p onclick="showContent('warranty')" class="filter-item">
+          Bảo hành - bảo quản
+        </p>
+        <p onclick="showContent('delivery')" class="filter-item">
+          Giao hàng - lắp đặt
+        </p>
+      </div>
+      <div id="description" class="filter-content container">
+        <img src="../assets/images/sanpham/detail/Mota_1.png" alt="" />
+      </div>
+      <div id="warranty" class="filter-content container">
+        <b>Bảo quản:</b>
+
+        <ul>
+          <li>
+            Dùng khăn ẩm với nước sạch hoặc dung dịch tẩy rửa nhẹ để làm sạch
+            sản phẩm. Sau đó, lau khô sản phẩm bằng khăn mềm.
+          </li>
+
+          <li>
+            Không để sản phẩm tiếp xúc với nước hoặc nguồn nhiệt độ cao trong
+            thời gian dài.
+          </li>
+
+          <li>
+            Không dùng các vật sắc nhọn, thô cứng, sần sùi chà xát sản phẩm.
+          </li>
+        </ul>
+
+        <b>Bảo hành:</b>
+
+        <ul>
+          <li>Thời hạn bảo hành: bảo hành ống pen 12 tháng</li>
+          <li>
+            Bảo hành cho các sản phẩm có lỗi nguyên vật liệu hay lỗi từ nhà sản
+            xuất (như móp, méo, cong vênh các chi tiết sản phẩm, bong tróc
+            sơn,...). Hoặc các sản phẩm bị bể vỡ/ trầy xước/ biến dạng trong quá
+            trình vận chuyển.
+          </li>
+          <li>
+            Không bảo hành cho các sản phẩm hư hỏng trong quá trình quý khách sử
+            dụng do sử dụng không cẩn thận, bảo quản và vệ sinh không đúng cách.
+            Cũng như sản phẩm bị các hao mòn thông thường (như phai mờ, rỉ sét
+            do trầy xước, lỏng ốc vít sau một khoảng thời gian...).
+          </li>
+        </ul>
+      </div>
+      <div id="delivery" class="filter-content container">
+        <ul>
+          <li>
+            Đối với hàng hoá có kích thước nhỏ và trọng lượng nhẹ: (kích thước
+            cạnh dài nhất < 40cm và dưới 10kg), Phí giao hàng sẽ được tính theo
+            phí dịch vụ Grab, Lalamove, Ahamove áp dụng mức giá hiện hành không
+            bao gồm mã khuyến mãi.
+          </li>
+          <li>
+            Đối với hàng hoá cồng kềnh, cần lắp đặt, phí giao hàng của đơn hàng
+            được tính theo biểu phí như sau:
+          </li>
+          <li>
+            <img src="../assets/images/sanpham/detail/VanChuyen_1.png" alt="" />
+          </li>
+          <li>Phí giao hàng đã bao gồm phí dịch vụ lắp ráp sản phẩm.</li>
+
+          <li>
+            Trường hợp giao hàng ngoài giờ hành chính, quý khách vui lòng thanh
+            toán thêm 30% phí giao hàng theo quy định và tối thiểu là 50.000đ -
+          </li>
+        </ul>
+        <p>
+          Lưu ý: Make My Home là đơn vị quyết định phương thức vận chuyển cuối
+          cùng để đảm bảo an toàn cho hàng hoá cách tốt nhất.
+        </p>
+      </div>
+
+      <!--Sản phẩm liên quan-->
+      <div class="product_slide container">
+        <h1>Có thể bạn cũng thích</h1>
+        <div
+          id="relativeProduct"
+          class="carousel slide"
+          data-bs-touch="false"
+          data-bs-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="product_slide-container flex">
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_1.webp"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_1.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>CHIN</h2>
+                    <p>Bàn sofa, bàn góc</p>
+                    <div class="price">
+                      <span class="discount-price">880,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_2.webp"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_2.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>COTTON DYSANIA</h2>
+                    <p>Combo 3 món</p>
+                    <div class="price">
+                      <span class="discount-price">1,045,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_3.webp"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_3.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>HANO</h2>
+                    <p>Sofa đơn</p>
+                    <div class="price">
+                      <span class="discount-price">9,500,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_4.png"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_4.jpeg"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>HOBU</h2>
+                    <p>Kệ TV, kệ lưu trữ</p>
+                    <div class="price">
+                      <span class="discount-price">2,850,000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product_slide-container flex">
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_5.jpeg"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_5.png"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                    <div class="soldout">Bán hết</div>
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>KATTY</h2>
+                    <p>Ghế ăn, ghế làm việc</p>
+                    <div class="price">
+                      <span class="discount-price">1,450,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_6.jpeg"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_6.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>LEHI</h2>
+                    <p>Bàn ăn 4-6 người</p>
+                    <div class="price">
+                      <span class="discount-price">5,490,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_7.jpeg"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_7.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>MIN</h2>
+                    <p>Tranh 50*70cm</p>
+                    <div class="price">
+                      <span class="discount-price">790,000</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/images/sanpham/RProduct/img_8.png"
+                      alt="Product Image"
+                      class="original-image"
+                    />
+                    <img
+                      src="../assets/images/sanpham/RProduct/detail_8.webp"
+                      alt="Detail Image"
+                      class="hover-image"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <i
+                      class="fa-solid fa-cart-plus fa-2xl"
+                      id="add-cart"
+                      onclick="addItem(event)"
+                    ></i>
+                    <h2>PIN</h2>
+                    <p>Bảng ghim, ghi chú</p>
+                    <div class="price">
+                      <span class="discount-price">580,000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn-show"
+            type="button"
+            data-bs-target="#relativeProduct"
+            data-bs-slide="prev"
+          >
+            <i
+              class="fa-solid fa-angle-left fa-2xl"
+              style="color: #000000; position: relative; left: -7vw; top: -3vw"
+            ></i>
+          </button>
+          <button
+            class="carousel-control-next btn-show"
+            type="button"
+            data-bs-target="#relativeProduct"
+            data-bs-slide="next"
+          >
+            <i
+              class="fa-solid fa-angle-right fa-2xl"
+              style="color: #000000; position: relative; left: 5vw; top: -3vw"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <!--Share Content-->
+      <div class="container share"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/sanpham_detail.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

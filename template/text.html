@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Image Frame</title>
+  <style>
+    form {
+      text-align: center;
+    }
+
+    #imgFile {
+      width: 100vw;
+      height: 200px;
+      border-radius: 50%; /* Create a circular image frame */
+      border: 2px solid #ccc; /* Add a border for visual appeal */
+      
+    }
+
+    
+
+    label {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<form action="">
+  <label for="imageFile">
+    
+    Chọn ảnh
+  </label>
+  <input type="file" name="" id="imageFile" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png, image/jpg">
+</form>
+
+<script>
+  function chooseFile(input) {
+    var imgFile = document.getElementById("imgFile");
+    var file = input.files[0];
+
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        imgFile.src = e.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }
+</script>
+
+</body>
+</html>

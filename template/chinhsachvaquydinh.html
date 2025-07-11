@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--chinhsachvaquydinh-->
+    <link rel="stylesheet" href="../assets/css/chinhsachvaquydinh.css" />
+
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!--Chính sách và quy định Content-->
+      <div class="chinhsach_header container">
+        <hr size="30px" color="yellow" />
+        <h1>CHÍNH SÁCH VÀ CÁC QUY ĐỊNH</h1>
+        <div class="flex">
+          <div class="content">
+            <p style="text-align: right">
+              (sửa đổi và bổ sung ngày 18/09/2019)
+            </p>
+            <ol style="list-style-type: upper-roman">
+              <li>CHÍNH SÁCH BÁN HÀNG</li>
+              <p>
+                - Giá bán niêm yết (Website hoặc Fanpage) và tại các cửa hàng có
+                địa chỉ trên đây là giá bán chưa bao gồm thuế GTGT. Giá bán
+                thống nhất 1 giá duy nhất trên toàn hệ thống. Các hàng bán ra
+                được xuất hoá đơn tài chính thuế GTGT (VAT) khi khách hàng yêu
+                cầu và khách phải đóng thêm 10% thuế GTGT cho đơn hàng. Thời
+                gian xuất hoá đơn là 2 tuần sau khi khách hàng thanh toán cho
+                công ty (quý khách cung cấp đầy đủ thông tin xuất hoá đơn cho
+                doanh nghiệp).
+              </p>
+              <p>
+                - Giá bán tại cửa hàng và website chưa bao gồm phí vận chuyển và
+                lắp ráp tận nơi, các đơn hàng sẽ phải chi trả thêm phí vận
+                chuyển tuỳ từng khu vực.
+              </p>
+              <p>
+                Thanh toán bằng tiền mặt hoặc các loại thẻ tín dụng có đăng ký
+                niêm yết áp dụng tại cửa hàng và website.
+              </p>
+              <p>
+                - Quý khách vui lòng thanh toán tối thiểu 50% giá trị đơn hàng
+                trong vòng 24h để được giữ đơn hàng và xử lý lịch giao hàng. Sau
+                24h, nếu chưa thanh toán, quý khách sẽ phải tiến hành đặt hàng
+                và hẹn lịch giao hàng lại từ đầu.Trường hợp quý khách hủy đơn
+                hàng khi đã thanh toán, Make My Home sẽ chỉ hoàn trả 50% giá trị
+                đặt cọc.
+              </p>
+              <p>
+                - Đối với các mặt hàng phải đặt hàng, thời gian giao hàng từ
+                7-14 ngày làm việc tuỳ vào tình trạng hàng hoá, khách hàng đặt
+                cọc 50% giá trị hàng hoá đặt hàng. Hàng đặt hàng không được đổi
+                trả và hoàn tiền bởi bất cứ lí do gì.
+              </p>
+              <li>CHÍNH SÁCH GIỮ VÀ LƯU KHO</li>
+              <p>
+                - Make My Home nhận giữ hàng và lưu kho miễn phí trong vòng 15
+                ngày. Khi khách hàng có nhu cầu giữ hàng lâu hơn thời gian giao
+                hàng quy định, quý khách phải thanh toán 100% đơn hàng và Make
+                My Home sẽ tính phí lưu kho là 3% giá trị đơn hàng mỗi tuần -
+                được tính là ngày đầu tiên của mỗi 7 ngày tiếp theo sau thời hạn
+                15 ngày miễn phí lưu kho.
+              </p>
+              <p>
+                - Trường hợp quý khách hủy đơn hàng khi Make My home chưa giao
+                hàng, quý khách vẫn phải thanh toán phí lưu kho nếu quá thời hạn
+                15 ngày lưu kho miễn phí.
+              </p>
+              <p>
+                - Sau thời hạn 45 ngày, Make My Home sẽ tiến hành hủy đơn hàng
+                và chỉ hoàn trả 50% giá trị đơn hàng.
+              </p>
+              <li>CHÍNH SÁCH GIAO HÀNG</li>
+              <ol class="ol_1">
+                <li>Phạm vi giao hàng</li>
+                <p>
+                  Make My Home phục vụ giao hàng cho Khách hàng tại các địa điểm
+                  như sau:
+                </p>
+                <ol style="list-style-type: lower-alpha" class="ol_a">
+                  <li>Khu vực TP Hồ Chí Minh:</li>
+                  <p>
+                    - Đơn hàng sẽ được giao đến địa điểm khách hàng yêu cầu, đối
+                    với hàng hoá cần phải lắp đặt, bộ phận giao nhận sẽ lắp ráp
+                    hoàn thiện cho khách hàng. Ngoại trừ các trường hợp hạn chế
+                    như khu vực văn phòng, chung cư cao tầng có quy định hạn chế
+                    ra vào, các khu cao tầng không có khu vực gửi xe, khách hàng
+                    vui lòng gọi hotline để được hỗ trợ 028 6267 6466
+                  </p>
+                  <p>
+                    - Trường hợp quý khách không sử dụng dịch vụ lắp đặt đã bao
+                    gồm trong phí giao hàng, Make My Home sẽ không chịu trách
+                    nhiệm dịch vụ lắp đặt về sau.
+                  </p>
+                  <p>
+                    Quý khách vui lòng trả tất cả các loại phí phát sinh theo
+                    quy định của Ban Quản lý nơi minh sinh sống liên quan đến
+                    việc giao hàng, sử dụng thang máy, lắp đặt …
+                  </p>
+                  <li>Các tỉnh thành khác trong nước:</li>
+                  <p>
+                    - Make My Home chỉ giao hàng đến những tỉnh thành khác những
+                    sản phẩm theo quy định vì lí do tính chất dễ vỡ của sản phẩm
+                    trong lúc vận chuyển (vd: gương, thuỷ tinh,...)
+                  </p>
+                  <p>- Có 2 hình thức giao hàng:</p>
+                  <ul>
+                    <li>
+                      Hình thức 1: Make My Home sẽ giao hàng bằng dịch vụ
+                      Viettel Post tận nơi cho khách hàng theo địa chỉ mà khách
+                      hàng cung cấp.
+                    </li>
+                    <li>
+                      Hình thức 2: Đơn hàng sẽ được giao tới kho bãi các đơn vị
+                      vận chuyển trung gian theo chỉ định của khách hàng trong
+                      khu vực nội thành thành phố Hô Chí Minh như bến xe, nhà xe
+                      chuyên chở, ga xe lửa, ga hàng không, các đơn vị chuyển
+                      phát,... Make My Home không chịu trách nhiệm vận chuyển
+                      đến tận nơi cho quý khách hàng trong trường hợp này, khách
+                      hàng liên hệ với đơn vị vận chuyển trung gian để nhận
+                      hàng.
+                    </li>
+                  </ul>
+                </ol>
+                <li>Thời gian giao hàng</li>
+                <p>
+                  - Thời gian xử lí giao hàng vào 2 khung giờ: 9h -12h và
+                  14h-17h từ thứ 2 đến thứ 7 (trừ ngày lễ, tết). Trường hợp giao
+                  hàng ngoài giờ hành chính sẽ có phụ phí.
+                </p>
+                <p>
+                  - Đơn hàng sẽ được xử lý và giao hàng trong vòng 3 ngày từ
+                  ngày xác nhận đơn hàng đối với sản phẩm có sẵn và 7-14 ngày
+                  đối với sản phẩm đặt hàng.
+                </p>
+                <p>
+                  - Quý khách vui lòng sắp xếp thời gian hoặc sắp xếp người nhận
+                  hàng theo lịch giao hàng đã thống nhất.
+                </p>
+                <p>
+                  - Trường hợp quý khách có thay đổi về thời gian giao hàng, hủy
+                  đơn hàng hoặc có bất cứ thay đổi nào về đơn hàng, quý khách
+                  vui lòng liên hệ đến đường dây nóng của Make My Home trước 24h
+                  đối với đơn hàng tại tp. Hồ Chí Minh và 48h đối với đơn hàng
+                  tại các tỉnh khác. Trường hợp hủy đơn hàng muộn, Quý khách vui
+                  lỏng thanh toán phí giao hàng theo đơn hàng của quý khách.
+                </p>
+                <li>Phí giao hàng</li>
+                <ol style="list-style-type: lower-alpha" class="ol_a">
+                  <li>Khu vực Tp. Hồ Chí Minh</li>
+                  <p>
+                    - Đối với hàng hoá có kích thước nhỏ và trọng lượng nhẹ:
+                    (kích thước cạnh dài nhất < 40cm và dưới 10kg), Phí giao
+                    hàng sẽ được tính theo phí dịch vụ Grab, lalamove, Ahamove
+                    áp dụng mức giá hiện hành không bao gồm mã khuyến mãi.
+                  </p>
+                  <p>
+                    - Đối với hàng hoá cồng kềnh, cần lắp đặt, Phí giao hàng của
+                    đơn hàng được tính theo biểu phí như sau:
+                  </p>
+                  <table>
+                    <tr>
+                      <td>Khoảng cách tính từ kho hàng Make My Home</td>
+                      <td>
+                        Đối với mặt hàng có thể giao xe máy (Chiều dài tối đa
+                        1,2m, trọng lượng tối đa 30kg)
+                      </td>
+                      <td>
+                        Đối với mặt hàng cồng kềnh (Chiều dài trên 1,2m, trọng
+                        lượng trên 30kg)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dưới 3km</td>
+                      <td>80.000đ</td>
+                      <td>180.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 3-7km</td>
+                      <td>100.000đ</td>
+                      <td>200.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 7-10km</td>
+                      <td>130.000đ</td>
+                      <td>250.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 10-12km</td>
+                      <td>150.000đ</td>
+                      <td>280.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 12-15km</td>
+                      <td>180.000đ</td>
+                      <td>300.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 15-17km</td>
+                      <td>200.000đ</td>
+                      <td>350.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Từ 17-20km</td>
+                      <td>250.000đ</td>
+                      <td>380.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Trên 20km</td>
+                      <td>Theo phí dịch vụ của bên thứ 3</td>
+                      <td>Theo phí dịch vụ của bên thứ 3</td>
+                    </tr>
+                  </table>
+                  <p>
+                    - Phí giao hàng đã bao gồm phí dịch vụ lắp ráp sản phẩm.
+                  </p>
+                  <p>
+                    - Trường hợp giao hàng ngoài giờ hành chính, quý khách vui
+                    lòng thanh toán thêm 30% phí giao hàng theo quy định và tối
+                    thiểu là 50.000đ
+                  </p>
+                  <p>- Phụ thu khi khuân sofa lên lầu: 100.000đ/lầu.</p>
+                  <p>
+                    - Giao hàng từ Kho hàng của Make My Home, địa chỉ: 39 Đường
+                    Số 4, Phường Thạnh Mỹ Lợi, Quận 2, Thành phố Hồ Chí Minh
+                  </p>
+                  <p>
+                    Lưu ý: Make My Home là đơn vị quyết định phương thức vận
+                    chuyển cuối cùng để đảm bảo an toàn cho hàng hoá cách tốt
+                    nhất.
+                  </p>
+                  <li>Các tỉnh thành khác trong nước:</li>
+                  <p>
+                    - Phí giao hàng đến đơn vị vận chuyển trung gian bằng Phí
+                    giao hàng hoá cồng kềnh tại khu vực HCM
+                  </p>
+                  <p>
+                    - Phí giao từ đơn vị trung gian đến địa chỉ của quý khách
+                    hàng, Make My Home sẽ báo cho quý khách phí giao hàng bằng
+                    dịch vụ giao hàng Viettel Post hoặc đơn vị khác sau khi nhận
+                    được đơn đặt hàng từ quý khách.
+                  </p>
+                </ol>
+              </ol>
+              <li>CHÍNH SÁCH BẢO HÀNH - HOÀN TRẢ</li>
+              <ol class="ol_1">
+                <li>Điều kiện bảo hành - hoàn trả sản phẩm</li>
+                <p>
+                  - Quý khách còn giữ xác nhận về việc đã mua hàng tại Make My
+                  Home (hóa đơn mua hàng, biên nhận giao hàng, sao kê của ngân
+                  hàng.... ).
+                </p>
+                <p>- Sản phẩm không nằm trong danh mục hạn chế đổi trả.</p>
+                <p>
+                  - Sản phẩm phải còn nguyên tem, mác, nguyên đai kiện ban đầu
+                  (trừ trường hợp sản phẩm bị lỗi hoặc hư hại trong quá trình
+                  vận chuyển) và quà tặng kèm (nếu có).
+                </p>
+                <li>Quy trình thực hiện đổi trả hàng</li>
+                <p>
+                  - Quý khách vui lòng kiểm tra kỹ sản phẩm trước khi ký nhận
+                  hàng và báo ngay cho nhân viên giao hàng nếu có phát hiện lỗi
+                  sản phẩm hoặc liên hệ ngay với bộ phận chăm sóc khách hàng.
+                </p>
+                <p>
+                  - Bộ phận Kỹ Thuật sẽ liên hệ ngay với quý khách để xác nhận
+                  yêu cầu và lý do đổi trả, thống nhất giao dịch đổi trả cho sản
+                  phẩm.
+                </p>
+                <p>
+                  - Đối với hàng hoá nhỏ và đơn hàng các tỉnh thành khác: quý
+                  khách vui lòng mang tới/vận chuyển tới cửa hàng hoặc kho hàng
+                  gần nhất để đổi trả.
+                </p>
+                <p>
+                  - Đối với hàng hoá cồng kềnh đã lắp ráp: Make My Home sẽ bảo
+                  hành tận nơi tại TP HCM cho quý khách.
+                </p>
+                <p>
+                  - Quý khách hàng vui lòng kiểm tra kỹ sản phẩm một lần nữa
+                  trước khi ký nhận đổi trả hàng.
+                </p>
+                <li>Quy định đổi trả/ bảo hành</li>
+                <ol style="list-style-type: lower-alpha" class="ol_a">
+                  <li>
+                    Quy định đổi trả/ bảo hành được áp dụng đối với những hàng
+                    hóa và lỗi sau:
+                  </li>
+                  <p>
+                    - Sản phẩm không đúng như thông tin đăng tải (sai công dụng,
+                    sai thành phần, ...).
+                  </p>
+                  <p>
+                    - Sản phẩm bị bể vỡ/trầy xước/biến dạng trong quá trình vận
+                    chuyển trừ trường hợp vận chuyển theo chỉ định của khách
+                    hàng.
+                  </p>
+                  <p>- Sản phẩm nhận không đúng với đơn hàng đã đặt.</p>
+                  <p>
+                    - Các lỗi sản phẩm do quá trình sản xuất hoặc vận chuyển,
+                    lắp ráp như sau:
+                  </p>
+                  <ul>
+                    <li>Trầy tróc, chảy sơn bề mặt.</li>
+                    <li>Móp, méo, cong vênh các chi tiết sản phẩm.</li>
+                    <li>Sứt, mẻ cạnh, góc sản phẩm.</li>
+                    <li>Hở đinh, ốc.</li>
+                    <li>
+                      Biến dạng sản phẩm (do vận chuyển, do môi trường bảo quản
+                      từ phía nhà cung cấp, do quá trình sản xuất...).
+                    </li>
+                  </ul>
+                  <li>Không áp dụng đổi trả đối với những trường hợp sau:</li>
+                  <p>
+                    - Các sản phẩm trong Chương trình Giảm giá và Khuyến mại
+                    hoặc từ Cửa hàng Giảm giá.
+                  </p>
+                  <p>
+                    - Các hư hỏng gây ra trong quá trình sử dụng sau khi mua
+                    hàng như sử dụng không cẩn thận, đặt trong môi trường không
+                    đảm bảo, bảo quản không đúng hướng dẫn, tải trọng quá mức vệ
+                    sinh sản phẩm không đúng cách,...
+                  </p>
+                  <p>
+                    - Các hao mòn thông thường (ví dụ: phai mờ, rỉ sét, lỏng
+                    đinh vít hoặc bản lề sau một khoảng thời gian...)
+                  </p>
+                  <p>
+                    - Va chạm do tai nạn khi sử dụng hoặc khi quý khách tự vận
+                    chuyển sản phẩm.
+                  </p>
+                </ol>
+                <li>Thời gian giải quyết các đơn hàng đổi trả:</li>
+                <p>
+                  - Việc gửi sản phẩm thay thế hoặc hoàn tiền chỉ được bắt đầu
+                  sau khi chúng tôi đã hoàn tất việc kiểm tra đánh giá sản phẩm
+                  quý khách gửi lại.
+                </p>
+                <p>
+                  - Quy trình đánh giá chất lượng sản phẩm từ 3-5 ngày làm việc.
+                </p>
+                <p>
+                  - Bộ phận kỹ thuật sẽ liên hệ và thống nhất với khách hàng về
+                  quyết định sửa chữa hoặc đổi trả, thống nhất lịch giao hàng
+                  với quý khách hàng.
+                </p>
+                <li>Phí vận chuyển đối sản phẩm đổi trả/bảo hành</li>
+                <p>
+                  - Make My Home bảo hành miễn phí đối với các sản phẩm cồng
+                  kềnh trong thời hạn bảo hành.
+                </p>
+                <p>
+                  - Quý khách thanh toán phí vận chuyển đối với các đơn hàng đổi
+                  trả theo biểu phí tại mục II.3
+                </p>
+              </ol>
+              <li>CHÍNH SÁCH THANH TOÁN</li>
+              <p>- Thanh toán trực tiếp tiền mặt.</p>
+              <p>
+                - Thanh toán qua cổng thanh toán trực tiếp trên website
+                www.makemyhomevn.com
+              </p>
+              <p>
+                - Thanh toán khi nhận được hàng (COD) chỉ áp dụng cho khách hàng
+                tại TP.HCM
+              </p>
+              <p>- Thanh toán bằng hình thức chuyển khoản</p>
+              <p>
+                Thông tin chi tiết về số tài khoản chúng tôi sẽ gửi qua email
+                cho quý khách
+              </p>
+              <p
+                style="
+                  font-weight: 600;
+                  text-decoration: underline;
+                  font-size: 18px;
+                "
+              >
+                Lưu ý:
+              </p>
+              <p>
+                Nội dung chuyển khoản ghi rõ HỌ TÊN hoặc TÊN ĐƠN VỊ + MÃ ĐƠN
+                HÀNG. Sau khi chuyển khoản, chúng tôi sẽ liên hệ xác nhận và
+                tiến hành giao hàng. Nếu sau thời gian thỏa thuận mà chúng tôi
+                không giao hàng hoặc không phản hồi lại, quý khách có thể gửi
+                khiếu nại trực tiếp về công ty và yêu cầu bồi thường nếu chứng
+                minh được sự chậm trễ làm ảnh hưởng đến kinh doanh của quý
+                khách.
+              </p>
+              <p>
+                Đối với khách hàng có nhu cầu mua số lượng lớn để kinh doanh
+                hoặc buôn sỉ vui lòng liên hệ trực tiếp với chúng tôi để có
+                chính sách giá cả hợp lý. Và việc thanh toán sẽ được thực hiện
+                theo hợp đồng.
+              </p>
+              <p>
+                Chúng tôi cam kết kinh doanh minh bạch, hợp pháp, bán hàng chất
+                lượng, có nguồn gốc rõ ràng.
+              </p>
+              <div class="sign">
+                <h6>BAN GIÁM ĐỐC</h6>
+                <p>(Đã kí và đóng dấu)</p>
+              </div>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!--Share Content-->
+      <div class="container share" style="margin-top: 0"></div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

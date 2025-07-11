@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--LienHe-->
+    <link rel="stylesheet" href="../assets/css/user-info.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!-- user -->
+      <div class="container user-header">
+        <div class="left">
+          <div class="left_header">
+            <div class="image-preview" id="image-preview"></div>
+            <input
+              type="file"
+              id="file-upload"
+              accept="image/*"
+              style="display: none"
+            />
+            <!-- ten user -->
+            <p id="username-mini"></p>
+          </div>
+          <div class="lef-content">
+            <div class="list">
+              <i class="fa-regular fa-user"></i>
+              <p>Tài Khoản Của Tôi</p>
+            </div>
+            <ul class="list-ul">
+              <li>Hồ sơ</li>
+              <li>Ngân Hàng</li>
+              <li>Địa chỉ</li>
+              <li>Đổi mật khẩu</li>
+              <li>Cài Đặt Thông Báo</li>
+            </ul>
+            <div class="list">
+              <i class="fa-regular fa-calendar"></i>
+              <p>Đơn mua</p>
+            </div>
+            <div class="list">
+              <i class="fa-regular fa-bell"></i>
+              <p>Thông báo</p>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-tag"></i>
+              <p>Kho Voucher</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-header">
+            <h3>Hồ Sơ của tôi</h3>
+            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+          </div>
+          <div class="right-content">
+            <div class="right-text">
+              <table>
+                <tr>
+                  <td>Tên đăng nhập</td>
+                  <td id="username-large"></td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td id="email"></td>
+                </tr>
+                <tr>
+                  <td>Số diện thoại</td>
+                  <td>0934139046</td>
+                </tr>
+                <tr>
+                  <td>Giới tính</td>
+                  <td>
+                    <input type="radio" name="gioitinh" id="nam" checked />
+                    <label for="nam">Nam</label>
+                    <input type="radio" name="gioitinh" id="nu" />
+                    <label for="nu">Nữ</label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Ngày sinh</td>
+                  <td>
+                    <!-- Day dropdown -->
+                    <select id="day" name="day"></select>
+                    <!-- Month dropdown -->
+                    <select id="month" name="month"></select>
+                    <!-- Year dropdown -->
+                    <select id="year" name="year"></select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="right-img">
+              <form action="">
+                <img src="" alt="" width="200" height="200" id="imgFile" />
+                <input
+                  type="file"
+                  name=""
+                  id="imageFile"
+                  onchange="chooseFile(this)"
+                  accept="image/*"
+                  style="display: none"
+                />
+                <label for="imageFile">Choose Image</label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+
+    <script>
+      let user = localStorage.getItem("login");
+      if (user) {
+        user = JSON.parse(user); // Parse the JSON string to a JavaScript object
+
+        var username_large = document.getElementById("username-large");
+        var username_mini = document.getElementById("username-mini");
+        var emailElement = document.getElementById("email");
+
+        username_large.innerText = user.username;
+        username_mini.innerText = user.username;
+        emailElement.innerText = user.email; // Update the email in the DOM
+      }
+      // Function to populate dropdown with numbers
+      function populateDropdown(select, start, end) {
+        for (let i = start; i <= end; i++) {
+          let option = document.createElement("option");
+          option.value = i;
+          option.text = i;
+          select.appendChild(option);
+        }
+      }
+
+      // Populate day dropdown with numbers 1 to 31
+      let dayDropdown = document.getElementById("day");
+      populateDropdown(dayDropdown, 1, 31);
+
+      // Populate month dropdown with month names
+      let monthDropdown = document.getElementById("month");
+      let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      for (let i = 0; i < months.length; i++) {
+        let option = document.createElement("option");
+        option.value = i + 1; // Month values are 1-based
+        option.text = months[i];
+        monthDropdown.appendChild(option);
+      }
+
+      // Populate year dropdown with current year - 10 to current year + 10
+      let yearDropdown = document.getElementById("year");
+      let currentYear = new Date().getFullYear();
+      populateDropdown(yearDropdown, currentYear - 100, currentYear);
+      function chooseFile(input) {
+        var preview = document.getElementById("image-preview");
+        var imgFile = document.getElementById("imgFile");
+        var file = input.files[0];
+
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            var img = new Image();
+            img.src = e.target.result;
+
+            // Display image in image-preview
+            preview.innerHTML = ""; // Clear previous content
+            preview.appendChild(img);
+
+            // Display image in imgFile
+            imgFile.src = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
+  </body>
+</html>

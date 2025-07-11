@@ -1,0 +1,83 @@
+.thietke2_header .content {
+  position: relative;
+  margin: 10% 5% 0 5%;
+}
+
+.thietke2_header .header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5%;
+}
+.thietke2_header .header h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.thietke2_header .header span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.thietke2_header .header p {
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: justify;
+}
+.thietke2_header .cacduan .item {
+  box-shadow: none;
+}
+
+.thietke2_header .cacduan .item .button {
+  font-weight: bold;
+  color: var(--detail-color);
+  padding: 10px;
+}
+.thietke2_header .cacduan .item button {
+  background: white;
+  border: 1px solid var(--detail-color);
+  box-shadow: 0px 0px 2px var(--detail-color);
+}
+.thietke2_header .dangky {
+  display: flex;
+  margin-top: 10%;
+}
+
+.thietke2_header .dangky .dangky-bg {
+  background-color: rgb(246, 247, 248);
+  width: 55%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.dangky .dangky-bg .dangky-content table {
+  width: 100%;
+}
+.dangky .dangky-bg .dangky-content h1 {
+  font-size: 30px;
+}
+.dangky .dangky-bg .dangky-content input {
+  width: 100%;
+  padding: 10px;
+}
+.dangky .dangky-bg .dangky-content textarea {
+  padding: 10px;
+  width: 100%;
+}
+.dangky .dangky-bg .dangky-content td {
+  padding-bottom: 20px;
+}
+#name,
+#tel {
+  width: 98%;
+}
+.dangky .dangky-content .button {
+  display: flex;
+  justify-content: space-between;
+}
+.dangky .dangky-content .label input {
+  font-size: 16px;
+  height: auto;
+}
+.dangky .dangky-content button {
+  font-weight: bold;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}

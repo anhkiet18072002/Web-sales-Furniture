@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--LandingPage-->
+    <link rel="stylesheet" href="../assets/css/landingpage.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--SwiperJs-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+      <!--Slideshow-->
+      <div
+        id="Slideshow"
+        class="carousel slide slideshow carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#Slideshow"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#Slideshow"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#Slideshow"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#Slideshow"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#Slideshow"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#Slideshow"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#Slideshow"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Category-->
+      <div
+        id="Category"
+        class="carousel slide category"
+        data-bs-touch="false"
+        data-bs-interval="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="category1">
+              <a href="./sanpham_ghe.html">
+                <img
+                  src="../assets/images/landingpage/category/category_1.webp"
+                  alt="ảnh bàn ghế"
+                  style="width: 100%"
+                />
+              </a>
+              <div class="category_show">
+                <h2>Danh mục sản phẩm</h2>
+                <div class="category_img" id="page1">
+                  <a href="./sanpham_ghe.html" class="category_img-card">
+                    <img
+                      src="../assets/images/landingpage/category/category_2.webp"
+                      alt=""
+                    />
+                    <p>SOFA - sofas</p>
+                  </a>
+                  <a href="./sanpham_ghe.html" class="category_img-card">
+                    <img
+                      src="../assets/images/landingpage/category/category_3.webp"
+                      alt=""
+                    />
+                    <p>BÀN - tables</p>
+                  </a>
+                  <a href="./sanpham_ghe.html" class="category_img-card">
+                    <img
+                      src="../assets/images/landingpage/category/category_4.webp"
+                      alt=""
+                    />
+                    <p>GHẾ - chairs</p>
+                  </a>
+                  <a href="./sanpham_ghe.html" class="category_img-card">
+                    <img
+                      src="../assets/images/landingpage/category/category_5.webp"
+                      alt=""
+                    />
+                    <p>KỆ, TỦ - shelf units, cabinets</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="category_show">
+              <div class="category_img" id="page2">
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_6.webp"
+                    alt=""
+                  />
+                  <p>ĐÈN - lamps</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_7.webp"
+                    alt=""
+                  />
+                  <p>GƯƠNG - mirrors</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_8.webp"
+                    alt=""
+                  />
+                  <p>GIƯỜNG - beds</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_9.webp"
+                    alt=""
+                  />
+                  <p>CHĂN, GA, GỐI - beddings</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_10.webp"
+                    alt=""
+                  />
+                  <p>SẢN PHẨM DỆT MAY - home textitle</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_11.webp"
+                    alt=""
+                  />
+                  <p>TRANG TRÍ - decorations</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_12.webp"
+                    alt=""
+                  />
+                  <p>ĐỒ GIA DỤNG - household goods</p>
+                </a>
+                <a href="./sanpham_ghe.html" class="category_img-card">
+                  <img
+                    src="../assets/images/landingpage/category/category_13.webp"
+                    alt=""
+                  />
+                  <p>ẤN PHẨM - publications</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev btn-show"
+          type="button"
+          data-bs-target="#Category"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-angle-left fa-2xl" style="color: #000000"></i>
+        </button>
+        <button
+          class="carousel-control-next btn-show"
+          type="button"
+          data-bs-target="#Category"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-angle-right fa-2xl" style="color: #000000"></i>
+        </button>
+      </div>
+      <!--Why Choose Us-->
+      <div class="whychooseus">
+        <div class="bg">
+          <div class="container">
+            <h1>Why Choose Us</h1>
+            <h5>Chúng tôi luôn cung cấp cho bạn dịch vụ tốt nhất</h5>
+          </div>
+        </div>
+        <div class="content">
+          <div class="item none-border">
+            <img src="../assets/images/landingpage/WhyChooseUs/icon_1.svg" />
+            <p>Nội thất hiện đại</p>
+          </div>
+          <div class="item">
+            <img src="../assets/images/landingpage/WhyChooseUs/icon_2.svg" />
+            <p>Thân thiện người dùng</p>
+          </div>
+          <div class="item">
+            <img src="../assets/images/landingpage/WhyChooseUs/icon_3.svg" />
+            <p>Tiết kiệm chi phí</p>
+          </div>
+          <div class="item">
+            <img src="../assets/images/landingpage/WhyChooseUs/icon_4.svg" />
+            <p>Hỗ trợ 24/7</p>
+          </div>
+        </div>
+      </div>
+      <!--M-Concept Content-->
+      <div class="concept container">
+        <div class="concept-show">
+          <div id="M-concept" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="mconcept-show">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/landingpage/concept/concept_1.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Độc Lập Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_2.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>DaLat Grace Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>EZ Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_4.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>EZ TINY Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_5.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>QUADA Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_6.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>SAGO Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_7.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>DALAT Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_8.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>HANO Concept</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/landingpage/concept/concept_9.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="play-icon">
+                  <i class="fa-solid fa-circle-play fa-lg"></i>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>JOHY Concept</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev btn-show"
+              type="button"
+              data-bs-target="#M-concept"
+              data-bs-slide="prev"
+              style="position: relative; top: -22vh; left: -4vw"
+            >
+              <i
+                class="fa-solid fa-angle-left fa-2xl"
+                style="color: #000000"
+              ></i>
+            </button>
+            <button
+              class="carousel-control-next btn-show"
+              type="button"
+              data-bs-target="#M-concept"
+              data-bs-slide="next"
+              style="position: relative; top: -22vh; left: 38vw"
+            >
+              <i
+                class="fa-solid fa-angle-right fa-2xl"
+                style="color: #000000"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="concept-content">
+          <h1 class="title">
+            TRẢI NGHIỆM GIẢI PHÁP KHÔNG GIAN SỐNG MỚI CÙNG M-CONCEPT
+          </h1>
+          <p>
+            Concept là gói sản phẩm nội thất và cải tạo không gian toàn diện
+            theo thiết kế có sẵn từ thương hiệu Make My Home
+          </p>
+          <p>
+            Concept by Make My Home sẽ mang đến những giải pháp nội thất tối
+            giản với độ ứng dụng cao, phù hợp với nhiều phong cách khác nhau,
+            tạo ra không gian sống tiện nghi, thoải mái và giúp bạn thực sự thư
+            giãn mỗi khi trở về nhà.
+          </p>
+          <a href="./MConcept.html">Xem thêm >></a>
+        </div>
+      </div>
+      <!--Project Content-->
+      <div class="project-content container">
+        <h3>
+          DỰ ÁN
+          <span style="color: var(--highlight-color); font-size: 27px"
+            >MỚI NHẤT</span
+          >
+        </h3>
+        <div class="filter-bar">
+          <button id="all" class="filter-button active">Tất cả</button>
+          <button id="house" class="filter-button">Căn hộ</button>
+          <button id="city" class="filter-button">Nhà phố</button>
+          <button id="community" class="filter-button">Công cộng</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_1.webp"
+              alt="House Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_1.png"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_2.webp"
+              alt="City Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_2.png"
+              alt="City Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_3.jpeg"
+              alt="Park Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_3.jpeg"
+              alt="Park Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project city">
+            <img
+              src="../assets/images/landingpage/project/project_4.jpeg"
+              alt="House Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_4.jpeg"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_5.webp"
+              alt="City Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_5.png"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project community">
+            <img
+              src="../assets/images/landingpage/project/project_6.jpeg"
+              alt="Park Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_6.webp"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_7.webp"
+              alt="House Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_7.webp"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project house">
+            <img
+              src="../assets/images/landingpage/project/project_8.webp"
+              alt="City Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_8.png"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+          <div class="project community">
+            <img
+              src="../assets/images/landingpage/project/project_9.webp"
+              alt="Park Project"
+              class="original-image"
+            />
+            <img
+              src="../assets/images/landingpage/project/pre_9.png"
+              alt="House Project"
+              class="hover-image"
+            />
+          </div>
+        </div>
+        <a class="btn-more" href="./thietkethicong.html"
+          ><button>Xem thêm</button></a
+        >
+      </div>
+      <!--AboutUs Content-->
+      <div class="about">
+        <div class="aboutContent">
+          <h1>VỀ CHÚNG TÔI</h1>
+          <hr width="80%" size="20px" />
+          <p>
+            Tại MAKE MY HOME, tất cả sản phẩm trang trí nội thất & giải pháp
+            không gian sống không chỉ đơn thuần tuân thủ theo ngôn ngữ giản lược
+            của Minimalism, mà còn cân bằng được tính năng và độ thẩm mỹ cần có.
+          </p>
+          <p>
+            “Ít tức là nhiều", nhưng mỗi chi tiết xuất hiện trên thiết kế đều là
+            một sự chăm chút kỹ lưỡng và hoàn hảo. Và đó cũng chính là tôn chỉ
+            hoạt động của MAKE MY HOME. Với tinh thần cầu tiến luôn cố gắng hết
+            mình để cung cấp những sản phẩm chất lượng cộng với dịch vụ thân
+            thiện cho khách hàng, chúng tôi hy vọng có thể chia sẻ một niềm tin
+            cố hữu với tất cả mọi người: “Cuộc sống sẽ trở nên tốt đẹp hơn khi
+            không gian sống được quan tâm và đầu tư đúng mực.
+          </p>
+        </div>
+        <div class="bg">
+          <img src="../assets/images/landingpage/aboutus/img_1.webp" alt="" />
+        </div>
+      </div>
+      <!--Share Content-->
+      <div class="share container"></div>
+      <!--Footer-->
+      <footer></footer>
+      <!--Popup-->
+      <div class="video-popup js-modal">
+        <div class="popup-container js-modal-container">
+          <div class="modal-close js-close-btn">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+          <div class="video-container">
+            <iframe
+              width="95%"
+              src="https://www.youtube.com/embed/VW2FDeHTrzU"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+    <script src="../assets/js/landingpage.js"></script>
+  </body>
+</html>
